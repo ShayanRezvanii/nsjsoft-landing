@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import PrimaryButton from "../Layout/Button/PrimaryButton";
 import bussinesPic from "../../../public/Images/bussinesspic.png";
 import dotsBlue from "../../../public/Icons/Group 2140 Blue.svg";

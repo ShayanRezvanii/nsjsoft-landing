@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import PrimaryButton from "../Layout/Button/PrimaryButton";
 import HomeBanner from "../../../public/Images/Network.png";
 // import blueEllipse from "../../../public/Icons/Ellipse 90 Blue.svg";

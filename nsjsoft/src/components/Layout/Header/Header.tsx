@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../../../public/icon.png";
 import SecondaryButton from "../Button/SecondaryButton";
 import { Add, HambergerMenu } from "iconsax-react";

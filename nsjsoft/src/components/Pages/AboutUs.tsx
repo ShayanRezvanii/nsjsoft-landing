@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import funicketBanner from "../../../public/Images/Funicket.jpg";
 import PrimaryButton from "../Layout/Button/PrimaryButton";
 import SecondaryButton from "../Layout/Button/SecondaryButton";

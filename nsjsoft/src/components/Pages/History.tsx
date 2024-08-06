@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import { useInView } from "react-intersection-observer";
 import dotsBlue from "../../../public/Icons/Group 2140 Blue.svg";
 import tushehbar from "../../../public/Images/Tushehbar.png";

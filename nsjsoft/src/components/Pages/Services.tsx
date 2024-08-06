@@ -7,7 +7,6 @@ import {
   Monitor,
   ShieldSecurity,
 } from "iconsax-react";
-import React from "react";
 import IconText from "../Layout/Cards/IconText";
 
 function Services() {

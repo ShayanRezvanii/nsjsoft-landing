@@ -1,7 +1,5 @@
 /** @format */
 
-import React from "react";
-
 interface ImageCardProps {
   image: string;
   title?: string;
