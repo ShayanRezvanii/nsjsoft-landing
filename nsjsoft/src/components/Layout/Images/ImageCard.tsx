@@ -4,7 +4,7 @@ import React from "react";
 
 interface ImageCardProps {
   image: string;
-  title: string;
+  title?: string;
   width: string;
   height: string;
   rounded: string;

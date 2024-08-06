@@ -11,9 +11,10 @@ export default {
         Nian: ["Nian", "Nian-Bold", "Nian-Light", "Nian-ExtraBold"],
       },
       colors: {
-        primary: "#377DFF",
+        primary: "#E2E2E2",
+        blue: "#377DFF",
         gray: "#383638",
-        grayLight: "#464646",
+        grayLight: "#0B0F15",
       },
     },
   },

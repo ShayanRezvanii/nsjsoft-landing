@@ -8,7 +8,7 @@ interface SecondaryButtonProps {
 
 function SecondaryButton({ children }: SecondaryButtonProps) {
   return (
-    <button className=" bg-transparent border font-extrabold text-xl border-primary text-primary hover:bg-primary/30  duration-200 w-full h-12 rounded-3xl ">
+    <button className=" bg-transparent border font-extrabold  border-primary text-primary hover:bg-primary/30  duration-200 w-full  text-xs px-3 xl:text-xl h-12 rounded-3xl ">
       {children}
     </button>
   );

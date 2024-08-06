@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import aboutUsBanner from "../../../public/Images/aboutUsBanner.png";
+import funicketBanner from "../../../public/Images/Funicket.jpg";
 import PrimaryButton from "../Layout/Button/PrimaryButton";
 import SecondaryButton from "../Layout/Button/SecondaryButton";
 import dotsBlue from "../../../public/Icons/Group 2140 Blue.svg";
@@ -10,9 +10,9 @@ function AboutUs() {
   return (
     <div id="aboutUs" className=" w-full flex flex-col xl:px-14">
       <div className=" w-full flex flex-col items-center gap-6 justify-center">
-        <h1 className=" text-sm xl:text-2xl text-primary">درباره ما</h1>
-        <p className=" text-2xl xl:text-[55px] font-extrabold">
-          با تیم ما آشنا شوید
+        <h1 className=" text-sm xl:text-2xl text-primary">پلتفرم ما</h1>
+        <p className=" text-2xl text-white xl:text-[55px] font-extrabold">
+          با فانیکت آشنا شوید
         </p>
       </div>
 
@@ -22,31 +22,44 @@ function AboutUs() {
             <div className=" absolute left-0  xl:-right-7 -z-10 -top-4">
               <img src={dotsRed} />
             </div>
-            <img src={aboutUsBanner} />
+            <img src={funicketBanner} className=" rounded-3xl" />
             <div className=" absolute hidden xl:block -left-8 -z-10 -bottom-8">
               <img src={dotsBlue} />
             </div>
           </div>
 
-          <div className=" w-full flex gap-4 flex-col max-w-[610px]">
-            <p className=" text-justify text-sm xl:text-[20px]">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+          <div className=" w-full text-white flex gap-4 flex-col max-w-[610px]">
+            <p className=" text-justify leading-7 text-sm xl:text-[20px]">
+              پلتفرم "فانیکت" که توسط شرکت نامدار سهیل جاوید طراحی و توسعه یافته
+              است، یک راه‌حل جامع و کارآمد برای رزرو اماکن تفریحی و ورزشی به
+              شمار می‌آید. این پلتفرم با هدف تسهیل و بهبود تجربه کاربران در
+              زمینه یافتن و رزرو اماکن مختلف از جمله سالن‌های ورزشی، استخرها،
+              باشگاه‌های بدنسازی، زمین‌های تنیس، و دیگر مکان‌های تفریحی و ورزشی
+              طراحی شده است. با استفاده از فناوری‌های پیشرفته و رابط کاربری ساده
+              و کاربرپسند، فانیکت به کاربران این امکان را می‌دهد تا به راحتی و
+              با چند کلیک، مکان دلخواه خود را جستجو و رزرو کنند.
             </p>
             <p className=" text-justify text-sm text-[20px]">
-              کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
-              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
-              طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
-              فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
-              موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
-              نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
-              دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              همچنین، این پلتفرم اطلاعات کاملی از امکانات، تصاویر، نقد و
+              بررسی‌ها، و قیمت‌ها را ارائه می‌دهد تا کاربران بتوانند بهترین
+              تصمیم را برای اوقات فراغت و ورزش خود بگیرند. فانیکت نه تنها برای
+              کاربران عادی بلکه برای صاحبان و مدیران اماکن ورزشی و تفریحی نیز
+              بسیار مفید است. این پلتفرم به مدیران این امکان را می‌دهد تا به
+              راحتی برنامه‌ریزی و مدیریت رزروها را انجام دهند، ظرفیت‌ها را
+              بهینه‌سازی کنند و با تحلیل داده‌ها، استراتژی‌های بهتری برای جذب
+              مشتری اتخاذ نمایند. علاوه بر این، فانیکت امکاناتی نظیر ارائه
+              تخفیف‌های ویژه، تبلیغات هدفمند، و ارتباط مستقیم با مشتریان را نیز
+              فراهم می‌کند تا تجربه‌ای بی‌نقص و به‌یادماندنی برای هر دو طرف
+              ایجاد کند.
             </p>
             <div className=" w-full max-w-[420px] gap-6 flex">
-              <PrimaryButton>درباره ما</PrimaryButton>
-              <SecondaryButton>متن تست</SecondaryButton>
+              <a href="https://funicket.ir">
+                <PrimaryButton> ورود به فانیکت</PrimaryButton>
+              </a>
+
+              <a href="https://manager.funicket.ir">
+                <SecondaryButton>ثبت نام مجموعه</SecondaryButton>
+              </a>
             </div>
           </div>
         </div>

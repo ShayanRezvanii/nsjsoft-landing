@@ -43,11 +43,11 @@ function Header() {
 
   return (
     <>
-      <div className=" w-full flex justify-center   items-center xl:h-36 ">
-        <div className=" w-full  items-center justify-between px-12 hidden xl:flex">
+      <div className=" w-full flex justify-center    items-center xl:h-36 ">
+        <div className=" w-full  items-center text-white justify-between px-12 hidden xl:flex">
           <div className=" flex items-center">
             <img src={logo} className=" w-20 h-20" />
-            <p className=" font-bold text-2xl">نامدار سهیل جاوید</p>
+            {/* <p className=" font-bold text-2xl">نامدار سهیل جاوید</p> */}
           </div>
           <div className=" w-fit flex justify-center items-center gap-10 text-2xl">
             <Link
@@ -57,31 +57,9 @@ function Header() {
               smooth={true}
               offset={-20}
               duration={500}
-              className=" cursor-pointer"
+              className=" cursor-pointer "
             >
               صفحه اصلی
-            </Link>
-            <Link
-              activeClass="active"
-              to="history"
-              spy={true}
-              smooth={true}
-              offset={-20}
-              duration={500}
-              className=" cursor-pointer"
-            >
-              رزومه ما
-            </Link>
-            <Link
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              offset={-20}
-              duration={500}
-              className=" cursor-pointer"
-            >
-              خدمات ما
             </Link>
             <Link
               activeClass="active"
@@ -94,24 +72,49 @@ function Header() {
             >
               درباره ما
             </Link>
+            <Link
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+              className=" cursor-pointer"
+            >
+              خدمات ما
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="history"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+              className=" cursor-pointer"
+            >
+              رزومه ما
+            </Link>
           </div>
-          <div className=" w-full max-w-[185px] ">
-            <SecondaryButton>تماس با ما</SecondaryButton>
-          </div>
+          <a href="tel:02188748501" className=" w-full  max-w-[185px]">
+            <div className=" w-full max-w-[185px] ">
+              <SecondaryButton>تماس با ما</SecondaryButton>
+            </div>
+          </a>
         </div>
 
         <div className=" w-full  items-center flex justify-between px-4  xl:hidden">
           <div className=" w-full duration-200 max-w-[185px] ">
             {isOpen ? (
               <Add
-                className="  cursor-pointer rotate-45"
+                className="  text-white cursor-pointer rotate-45"
                 onClick={() => setIsOpen(false)}
                 size={24}
               />
             ) : (
               <>
                 <HambergerMenu
-                  className="  cursor-pointer"
+                  className="  text-white cursor-pointer"
                   onClick={() => setIsOpen(true)}
                   size={24}
                 />
@@ -120,14 +123,14 @@ function Header() {
           </div>
 
           <div className=" flex select-none items-center">
-            <img src={logo} className=" w-20 h-20" />
+            <img src={logo} className=" w-10 h-10" />
           </div>
         </div>
       </div>
 
       {isOpen ? (
         <div className=" w-full  relative">
-          <div className=" w-full  absolute  bg-white/30  backdrop-blur-md h-screen px-3 z-40">
+          <div className=" w-full  absolute text-whites  bg-white/30 mt-3  backdrop-blur-md h-screen p-3 z-40">
             <motion.ul
               variants={container}
               initial="hidden"
@@ -141,7 +144,7 @@ function Header() {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer w-full"
+                className=" cursor-pointer text-white w-full"
               >
                 <motion.li
                   variants={item}
@@ -153,19 +156,19 @@ function Header() {
               </Link>
               <Link
                 activeClass="active"
-                to="history"
+                to="aboutUs"
                 spy={true}
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer w-full"
+                className=" cursor-pointer text-white w-full"
               >
                 <motion.li
                   variants={item}
                   onClick={() => setIsOpen(false)}
                   className=" cursor-pointer font-extrabold hover:bg-primary/70 hover:text-white duration-200 hover:backdrop-blur-md w-full p-2 rounded-lg "
                 >
-                  رزومه ما
+                  درباره ما
                 </motion.li>
               </Link>
               <Link
@@ -175,7 +178,7 @@ function Header() {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer w-full"
+                className=" cursor-pointer text-white w-full"
               >
                 <motion.li
                   variants={item}
@@ -185,21 +188,22 @@ function Header() {
                   خدمات ما
                 </motion.li>
               </Link>
+
               <Link
                 activeClass="active"
-                to="aboutUs"
+                to="history"
                 spy={true}
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer w-full"
+                className=" cursor-pointer text-white w-full"
               >
                 <motion.li
                   variants={item}
                   onClick={() => setIsOpen(false)}
                   className=" cursor-pointer font-extrabold hover:bg-primary/70 hover:text-white duration-200 hover:backdrop-blur-md w-full p-2 rounded-lg "
                 >
-                  درباره ما
+                  رزومه ما
                 </motion.li>
               </Link>
             </motion.ul>

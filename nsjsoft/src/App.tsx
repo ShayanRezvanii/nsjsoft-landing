@@ -3,7 +3,6 @@
 import "./App.css";
 import MainLayout from "./components/Layout/MainLayout/MainLayout";
 import AboutUs from "./components/Pages/AboutUs";
-import Bussiness from "./components/Pages/Bussiness";
 import History from "./components/Pages/History";
 import Home from "./components/Pages/Home";
 import Services from "./components/Pages/Services";
@@ -15,7 +14,7 @@ function App() {
       <AboutUs />
       <Services />
       <History />
-      <Bussiness />
+      {/* <Bussiness /> */}
     </MainLayout>
   );
 }

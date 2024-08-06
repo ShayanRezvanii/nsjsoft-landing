@@ -3,7 +3,9 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import dotsBlue from "../../../public/Icons/Group 2140 Blue.svg";
-import historyBanner from "../../../public/Images/historyPic.png";
+import tushehbar from "../../../public/Images/Tushehbar.png";
+import akam from "../../../public/Images/Akam.png";
+import sofragol from "../../../public/Images/sofragol.png";
 import ImageCard from "../Layout/Images/ImageCard";
 import SecondaryButton from "../Layout/Button/SecondaryButton";
 import { motion } from "framer-motion";
@@ -41,15 +43,23 @@ function History() {
       className="relative justify-center flex-col flex  items-center w-full mb-20 xl:mb-40  xl:px-28 gap-16"
     >
       <div className="flex flex-col items-center gap-6">
-        <h1 className="text-sm xl:text-2xl text-primary">رزومه ی ما</h1>
-        <p className="text-2xl xl:text-[55px] font-extrabold">
-          لورم لیپسوم متن ساختگی
+        {/* <h1 className="text-sm xl:text-2xl text-primary">رزومه ی ما</h1> */}
+        <p className="text-2xl xl:text-[55px] text-white font-extrabold">
+          رزومه ما
         </p>
         <div className="max-w-[674px]">
-          <p className="text-center">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+          <p className="text-center text-white">
+            شرکت نامدار سهیل جاوید با بیش از دو دهه تجربه در زمینه ارائه خدمات
+            انفورماتیک و فناوری اطلاعات، به یکی از پیشروترین و معتبرترین شرکت‌ها
+            در این حوزه تبدیل شده است. ما با بهره‌گیری از تیمی متخصص و با تجربه،
+            طیف وسیعی از خدمات شامل طراحی و توسعه نرم‌افزارهای سفارشی، مشاوره
+            فناوری اطلاعات، مدیریت و پشتیبانی شبکه‌های کامپیوتری، امنیت سایبری،
+            تحلیل داده‌ها و راهکارهای ابری را ارائه می‌دهیم. همچنین، در زمینه
+            پیاده‌سازی سیستم‌های نظارتی دوربین‌های مداربسته، انتقال تصویر،
+            راه‌اندازی سیستم‌های VoIP و ارائه انواع تونل‌های اینترنتی نیز فعالیت
+            می‌کنیم. تلاش ما بر این است که با استفاده از فناوری‌های پیشرفته و
+            نوآوری‌های روز، راه‌حل‌های جامع و کارآمدی را ارائه داده و به موفقیت
+            پایدار مشتریان خود کمک کنیم
           </p>
         </div>
       </div>
@@ -64,13 +74,7 @@ function History() {
         className="hidden w-full md:flex justify-center gap-14"
       >
         <motion.li variants={item}>
-          <ImageCard
-            width="350"
-            height="350"
-            title="متن تست"
-            image={historyBanner}
-            rounded="30px"
-          />
+          <ImageCard width="350" height="350" image={sofragol} rounded="30px" />
         </motion.li>
 
         <motion.li variants={item}>
@@ -78,19 +82,12 @@ function History() {
             width="400"
             height="400"
             rounded="30px"
-            title="لورم لیپسوم"
-            image={historyBanner}
+            image={tushehbar}
           />
         </motion.li>
 
         <motion.li variants={item}>
-          <ImageCard
-            width="350"
-            height="350"
-            rounded="30px"
-            title="لورم لیپسوم"
-            image={historyBanner}
-          />
+          <ImageCard width="350" height="350" rounded="30px" image={akam} />
         </motion.li>
       </motion.ul>
 
@@ -101,45 +98,25 @@ function History() {
         className="w-full flex flex-col items-center md:hidden justify-center gap-14"
       >
         <motion.li variants={item}>
-          <ImageCard
-            width="300"
-            height="300"
-            title="متن تست"
-            image={historyBanner}
-            rounded="30px"
-          />
+          <ImageCard width="300" height="300" image={sofragol} rounded="30px" />
         </motion.li>
         <motion.li variants={item}>
           <ImageCard
             width="300"
             height="300"
-            title="متن تست"
-            image={historyBanner}
+            image={tushehbar}
             rounded="30px"
           />
         </motion.li>
         <motion.li variants={item}>
-          <ImageCard
-            width="300"
-            height="300"
-            title="متن تست"
-            image={historyBanner}
-            rounded="30px"
-          />
-        </motion.li>
-        <motion.li variants={item}>
-          <ImageCard
-            width="300"
-            height="300"
-            title="متن تست"
-            image={historyBanner}
-            rounded="30px"
-          />
+          <ImageCard width="300" height="300" image={akam} rounded="30px" />
         </motion.li>
       </motion.ul>
-      <div className="w-full max-w-[226px]">
-        <SecondaryButton>متن تست</SecondaryButton>
-      </div>
+      <a href="tel:02188748501" className=" w-full  max-w-[185px]">
+        <div className="w-full max-w-[226px]">
+          <SecondaryButton>تماس با کارشناسان ما</SecondaryButton>
+        </div>
+      </a>
     </div>
   );
 }

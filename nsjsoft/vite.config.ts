@@ -9,6 +9,6 @@ export default defineConfig({
   server: {
     host: "192.168.1.152", // Specify your desired IP address
 
-    port: 3000, // Replace with your desired port number
+    port: 3001, // Replace with your desired port number
   },
 });

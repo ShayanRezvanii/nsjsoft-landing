@@ -9,13 +9,13 @@ function Bussiness() {
   return (
     <div className=" w-full flex flex-col-reverse md:flex-row items-center xl:items-start justify-between md:px-40  xl:px-28 mb-32">
       <div className=" flex mt-28 xl:mt-0 flex-col items-center xl:items-start gap-6">
-        <p className=" text-[28px] text-center xl:text-right xl:text-[55px] font-extrabold">
+        <p className=" text-[28px] text-center xl:text-right text-white xl:text-[55px] font-extrabold">
           لورم
-          <br className=" hidden xl:block" /> متن ساختگی <br />
+          <br className=" hidden xl:block text-white" /> متن ساختگی <br />
           با تولید؟
         </p>
 
-        <p className=" text-[20px] text-grayLight">
+        <p className=" text-[20px] text-white">
           لورم لیپسوم متن ساختگی، با تولید نامفهوم
         </p>
         <div className=" w-full max-w-[140px]  xl:max-w-[193px]">
