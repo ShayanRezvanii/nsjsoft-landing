@@ -141,7 +141,7 @@ function Header() {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer"
+                className=" cursor-pointer w-full"
               >
                 <motion.li
                   variants={item}
@@ -158,7 +158,7 @@ function Header() {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer"
+                className=" cursor-pointer w-full"
               >
                 <motion.li
                   variants={item}
@@ -175,7 +175,7 @@ function Header() {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer"
+                className=" cursor-pointer w-full"
               >
                 <motion.li
                   variants={item}
@@ -192,7 +192,7 @@ function Header() {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className=" cursor-pointer"
+                className=" cursor-pointer w-full"
               >
                 <motion.li
                   variants={item}
